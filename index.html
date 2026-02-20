@@ -28,25 +28,56 @@
         </div>
     </nav>
 
-    <header class="hero-gradient pt-40 pb-24 px-6 text-white overflow-hidden">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 text-center md:text-left">
-            <div class="relative flex-shrink-0 w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
-                <img src="Edd2.png" alt="Eduardo Payang" class="w-full h-full rounded-3xl object-cover border-4 border-white/20 shadow-2xl transition hover:scale-[1.02] duration-500">
-                <div class="absolute -bottom-4 -right-4 bg-green-500 w-8 h-8 rounded-full border-4 border-[#0f172a] shadow-lg animate-pulse"></div>
+    <header class="relative pt-48 pb-32 px-6 overflow-hidden bg-[#020617]">
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
+            <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-600/20 rounded-full blur-[120px] animate-pulse"></div>
+            <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-indigo-600/20 rounded-full blur-[120px]"></div>
+        </div>
+
+        <div class="relative z-10 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16">
+            <div class="relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-[2rem] blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                <div class="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-[2rem] overflow-hidden border border-white/10 bg-slate-900 shadow-2xl">
+                    <img src="Edd2.png" alt="Eduardo Payang" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                </div>
+                <div class="absolute -bottom-2 -right-2 bg-slate-900 p-2 rounded-2xl border border-white/10 shadow-xl">
+                    <div class="flex items-center gap-2 px-3 py-1">
+                        <span class="relative flex h-3 w-3">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+                        </span>
+                        <span class="text-[10px] font-black text-white uppercase tracking-widest">Active</span>
+                    </div>
+                </div>
             </div>
             
-            <div class="flex-grow">
-                <h1 class="text-5xl md:text-7xl lg:text-8xl font-black mb-4 tracking-tighter uppercase leading-tight">
-                    Eduardo <span class="text-blue-400">Payang</span>
+            <div class="text-center md:text-left flex-grow">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 mb-6">
+                    <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+                    <span class="text-blue-400 text-[10px] font-bold uppercase tracking-[0.2em]">Senior Leadership Portfolio</span>
+                </div>
+                
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-black mb-6 tracking-tighter text-white leading-none">
+                    EDUARDO <br class="hidden lg:block"> 
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-300">PAYANG</span>
                 </h1>
-                <p class="text-blue-100 text-xl md:text-2xl font-light tracking-wide mb-8">
-                    Senior Tech Support Specialist <span class="mx-2 opacity-30">|</span> 
-                    Operations Manager <span class="mx-2 opacity-30">|</span> 
-                    16+ Years Expertise
-                </p>
-                <div class="flex flex-wrap justify-center md:justify-start gap-4">
-                    <span class="bg-white/10 px-4 py-2 rounded-lg text-sm font-semibold border border-white/10 uppercase tracking-widest">Tarlac City, PH</span>
-                    <span class="bg-blue-500/20 px-4 py-2 rounded-lg text-sm font-semibold border border-blue-400/20 uppercase tracking-widest text-blue-300 italic">Remote & Hybrid Ready</span>
+
+                <div class="flex flex-wrap justify-center md:justify-start gap-3 mb-8">
+                    <span class="bg-white/5 backdrop-blur-md border border-white/10 px-4 py-2 rounded-xl text-xs font-bold text-blue-100 tracking-wide">
+                        <i class="fa-solid fa-microchip mr-2 text-blue-400"></i> Senior Tech Specialist
+                    </span>
+                    <span class="bg-white/5 backdrop-blur-md border border-white/10 px-4 py-2 rounded-xl text-xs font-bold text-blue-100 tracking-wide">
+                        <i class="fa-solid fa-users-gear mr-2 text-blue-400"></i> Operations Manager
+                    </span>
+                    <span class="bg-white/5 backdrop-blur-md border border-white/10 px-4 py-2 rounded-xl text-xs font-bold text-blue-100 tracking-wide font-mono italic">
+                        16+ Years Experience
+                    </span>
+                </div>
+
+                <div class="flex flex-wrap justify-center md:justify-start gap-4 text-slate-400 text-sm font-medium">
+                    <p class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-blue-500"></i> Tarlac City, PH</p>
+                    <span class="hidden md:inline opacity-20">|</span>
+                    <p class="flex items-center gap-2"><i class="fa-solid fa-laptop-house text-blue-500"></i> Remote & Hybrid Expert</p>
             </p>
         </div>
     </header>
