@@ -28,15 +28,25 @@
         </div>
     </nav>
 
-    <header class="hero-gradient pt-40 pb-24 px-6 text-white text-center">
-        <div class="max-w-4xl mx-auto">
-            <div class="relative inline-block mb-10">
-                <img src="Edd2.png" alt="Eduardo Payang" class="w-40 h-40 md:w-48 md:h-48 rounded-3xl mx-auto object-cover border-4 border-white/20 shadow-2xl transition hover:scale-105 duration-300">
-                <div class="absolute -bottom-2 -right-2 bg-green-500 w-6 h-6 rounded-full border-4 border-slate-900 shadow-lg"></div>
+    <header class="hero-gradient pt-40 pb-24 px-6 text-white overflow-hidden">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 text-center md:text-left">
+            <div class="relative flex-shrink-0 w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
+                <img src="Edd2.png" alt="Eduardo Payang" class="w-full h-full rounded-3xl object-cover border-4 border-white/20 shadow-2xl transition hover:scale-[1.02] duration-500">
+                <div class="absolute -bottom-4 -right-4 bg-green-500 w-8 h-8 rounded-full border-4 border-[#0f172a] shadow-lg animate-pulse"></div>
             </div>
-            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight uppercase">Eduardo Payang</h1>
-            <p class="text-blue-100 text-lg md:text-xl font-light max-w-2xl mx-auto leading-relaxed">
-                Senior Tech Support Specialist • Operations Manager • 16+ Years Expertise
+            
+            <div class="flex-grow">
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-black mb-4 tracking-tighter uppercase leading-tight">
+                    Eduardo <span class="text-blue-400">Payang</span>
+                </h1>
+                <p class="text-blue-100 text-xl md:text-2xl font-light tracking-wide mb-8">
+                    Senior Tech Support Specialist <span class="mx-2 opacity-30">|</span> 
+                    Operations Manager <span class="mx-2 opacity-30">|</span> 
+                    16+ Years Expertise
+                </p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                    <span class="bg-white/10 px-4 py-2 rounded-lg text-sm font-semibold border border-white/10 uppercase tracking-widest">Tarlac City, PH</span>
+                    <span class="bg-blue-500/20 px-4 py-2 rounded-lg text-sm font-semibold border border-blue-400/20 uppercase tracking-widest text-blue-300">Open to Relocation</span>
             </p>
         </div>
     </header>
