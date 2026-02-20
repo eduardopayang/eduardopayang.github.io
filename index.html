@@ -7,135 +7,118 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="icon" href="Edd2.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .glass { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(12px); }
+        .hero-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e40af 100%); }
+    </style>
 </head>
-<body class="bg-slate-50 font-sans text-slate-900">
+<body class="bg-slate-50 text-slate-900">
 
-    <header class="bg-white border-b border-slate-200 py-16 px-6 text-center">
+    <nav class="fixed top-0 w-full z-50 glass border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="font-black tracking-tighter text-blue-700 text-xl">EP.</span>
+            <div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest text-slate-500">
+                <a href="#journey" class="hover:text-blue-600 transition">Journey</a>
+                <a href="#awards" class="hover:text-blue-600 transition">Awards</a>
+                <a href="#references" class="hover:text-blue-600 transition">References</a>
+            </div>
+            <a href="mailto:epayang21@gmail.com" class="bg-blue-600 text-white px-5 py-2 rounded-full text-xs font-bold uppercase hover:bg-blue-700 shadow-lg transition">Contact</a>
+        </div>
+    </nav>
+
+    <header class="hero-gradient pt-40 pb-24 px-6 text-white text-center">
         <div class="max-w-4xl mx-auto">
-            <div class="mb-8">
-                <img src="Edd2.png" alt="Eduardo Payang" class="w-40 h-40 md:w-48 md:h-48 rounded-full mx-auto object-cover border-4 border-blue-600 shadow-xl">
+            <div class="relative inline-block mb-10">
+                <img src="Edd2.png" alt="Eduardo Payang" class="w-40 h-40 md:w-48 md:h-48 rounded-3xl mx-auto object-cover border-4 border-white/20 shadow-2xl transition hover:scale-105 duration-300">
+                <div class="absolute -bottom-2 -right-2 bg-green-500 w-6 h-6 rounded-full border-4 border-slate-900 shadow-lg"></div>
             </div>
-            <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 uppercase tracking-tight">Eduardo Payang</h2>
-            <p class="text-xl text-slate-600 leading-relaxed italic mb-8">
-                Senior Tech Support & Ops Leader with 16+ years of BPO and remote enterprise experience. Expert in Tier 2/3 troubleshooting, Zoho Suite, and network administration.
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight uppercase">Eduardo Payang</h1>
+            <p class="text-blue-100 text-lg md:text-xl font-light max-w-2xl mx-auto leading-relaxed">
+                Senior Tech Support Specialist • Operations Manager • 16+ Years Expertise
             </p>
-            <div class="flex justify-center space-x-4">
-                <span class="bg-slate-100 text-slate-700 px-4 py-1 rounded-md text-sm font-semibold border border-slate-200">Tarlac City, PH</span>
-                <span class="bg-blue-50 text-blue-700 px-4 py-1 rounded-md text-sm font-semibold border border-blue-100">16+ Years Experience</span>
-            </div>
         </div>
     </header>
 
-    <section class="py-16 px-6">
+    <section id="journey" class="py-24 px-6">
         <div class="max-w-4xl mx-auto">
-            <h3 class="text-2xl font-bold text-slate-900 mb-10 border-l-4 border-blue-600 pl-4 uppercase tracking-wide">Professional Journey</h3>
-            
+            <h3 class="text-center text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-16 italic">Professional Journey</h3>
             <div class="space-y-12">
-                <div class="relative pl-8 border-l-2 border-slate-200 pb-2">
-                    <div class="absolute -left-[9px] top-0 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-sm"></div>
-                    <span class="text-sm font-bold text-blue-600 uppercase">2018 — 2024</span>
-                    <h4 class="text-xl font-bold text-slate-900 mt-1">Senior Technical Support Engineer</h4>
-                    <p class="text-slate-500 font-medium italic">Remote / Enterprise Support</p>
-                    <p class="text-slate-600 mt-2 text-sm">Specializing in Zoho CRM implementation, Tier 2/3 troubleshooting, and managing complex cloud-based workflows for global clients.</p>
+                <div class="relative pl-8 border-l-2 border-slate-200 group">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 bg-blue-600 rounded-full border-4 border-white group-hover:scale-150 transition"></div>
+                    <span class="text-xs font-bold text-blue-600 uppercase">2018 — 2024</span>
+                    <h4 class="text-xl font-bold text-slate-900 mt-1">Senior Technical Support Specialist</h4>
+                    <p class="text-slate-600 mt-3 text-sm leading-relaxed">Expert in Zoho CRM implementation, Tier 2/3 troubleshooting, and optimizing cross-functional team workflows for global operations.</p>
                 </div>
-
-                <div class="relative pl-8 border-l-2 border-slate-200 pb-2">
-                    <div class="absolute -left-[9px] top-0 w-4 h-4 bg-slate-400 rounded-full border-4 border-white"></div>
-                    <span class="text-sm font-bold text-slate-500 uppercase">2012 — 2018</span>
+                <div class="relative pl-8 border-l-2 border-slate-200 group">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 bg-slate-300 rounded-full border-4 border-white group-hover:scale-150 transition"></div>
+                    <span class="text-xs font-bold text-slate-400 uppercase">2012 — 2018</span>
                     <h4 class="text-xl font-bold text-slate-900 mt-1">Operations Team Manager</h4>
-                    <p class="text-slate-500 font-medium italic">BPO Leadership</p>
-                    <p class="text-slate-600 mt-2 text-sm">Led teams of 20+ agents. Awarded for excellence in KPI management, coaching, and maintaining high SLA standards in fast-paced environments.</p>
-                </div>
-
-                <div class="relative pl-8 border-l-2 border-slate-200 pb-2">
-                    <div class="absolute -left-[9px] top-0 w-4 h-4 bg-slate-300 rounded-full border-4 border-white"></div>
-                    <span class="text-sm font-bold text-slate-500 uppercase">2008 — 2012</span>
-                    <h4 class="text-xl font-bold text-slate-900 mt-1">Subject Matter Expert / Tier 2 Support</h4>
-                    <p class="text-slate-500 font-medium italic">Sutherland Global Services</p>
-                    <p class="text-slate-600 mt-2 text-sm">Served as a technical escalation point. This is the era where I received the **Most Number of Platinum Values Awards** for technical accuracy and service.</p>
-                </div>
-
-                <div class="relative pl-8 border-l-2 border-slate-200">
-                    <div class="absolute -left-[9px] top-0 w-4 h-4 bg-slate-200 rounded-full border-4 border-white"></div>
-                    <span class="text-sm font-bold text-slate-400 uppercase">Early Career</span>
-                    <h4 class="text-lg font-bold text-slate-700 mt-1">Technical Support Representative</h4>
-                    <p class="text-slate-600 mt-2 text-sm">Built the foundation of my 16-year career in hardware troubleshooting and network administration basics.</p>
+                    <p class="text-slate-600 mt-3 text-sm leading-relaxed">Led 20+ agents with a heavy focus on KPI attainment, performance coaching, and strict SLA compliance in high-pressure BPO settings.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-16 px-6 bg-slate-100">
-        <div class="max-w-4xl mx-auto text-center md:text-left">
-            <h3 class="text-2xl font-bold text-slate-900 mb-8 border-l-4 border-blue-600 pl-4 uppercase tracking-wide">Awards & Recognitions</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-white p-4 rounded-xl shadow-md border border-slate-200 transition hover:shadow-lg">
-                    <img src="Sutherland.jpg" alt="Five Core Values" class="rounded-lg w-full h-auto max-h-72 object-contain mb-4 border border-slate-100 mx-auto">
-                    <div class="text-center">
-                        <p class="font-bold text-slate-800">Five Core Values Award</p>
-                        <p class="text-xs text-blue-600 font-semibold uppercase">Sutherland Global Services</p>
-                    </div>
+    <section id="awards" class="py-24 px-6 bg-slate-900 text-white">
+        <div class="max-w-5xl mx-auto text-center">
+            <h3 class="text-sm font-black text-blue-400 uppercase tracking-[0.3em] mb-16">Recognition of Excellence</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="group bg-white/5 p-6 rounded-3xl border border-white/10 hover:bg-white/10 transition">
+                    <img src="Sutherland.jpg" alt="Award 1" class="rounded-xl w-full h-auto max-h-72 object-contain mb-6 mx-auto shadow-2xl">
+                    <p class="font-bold text-lg mb-1">Five Core Values Award</p>
+                    <p class="text-xs text-blue-400 font-bold uppercase">Sutherland Global Services</p>
                 </div>
-                <div class="bg-white p-4 rounded-xl shadow-md border border-slate-200 transition hover:shadow-lg">
-                    <img src="Sutherland2.png" alt="Platinum Values Award" class="rounded-lg w-full h-auto max-h-72 object-contain mb-4 border border-slate-100 mx-auto">
-                    <div class="text-center">
-                        <p class="font-bold text-slate-800 text-sm md:text-base">Most Number of Platinum Values Award Received</p>
-                        <p class="text-xs text-blue-600 font-semibold uppercase">Sutherland Global Services</p>
+                <div class="group bg-white/5 p-6 rounded-3xl border border-white/10 hover:bg-white/10 transition">
+                    <img src="Sutherland2.png" alt="Award 2" class="rounded-xl w-full h-auto max-h-72 object-contain mb-6 mx-auto shadow-2xl">
+                    <p class="font-bold text-lg mb-1 text-sm md:text-base">Platinum Values Award</p>
+                    <p class="text-xs text-blue-400 font-bold uppercase">Sutherland Global Services</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-16 px-6 bg-white">
+    <section id="references" class="py-24 px-6 bg-white">
         <div class="max-w-6xl mx-auto">
-            <h3 class="text-2xl font-bold text-slate-900 mb-10 border-l-4 border-blue-600 pl-4 uppercase tracking-wide">Character References</h3>
+            <h3 class="text-center text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-16">Character References</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                
-                <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
-                    <p class="text-blue-600 font-bold text-lg mb-1">Ma. Vanessa M. David</p>
-                    <p class="text-slate-700 text-sm font-semibold mb-3">Senior Manager, RCI Asia Pacific</p>
-                    <a href="tel:+639453514722" class="text-sm text-slate-500 hover:text-blue-600 transition"><i class="fa-solid fa-phone mr-1"></i> 0939 912 6435</a>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition">
+                    <p class="text-blue-700 font-extrabold text-lg">Ma. Vanessa M. David</p>
+                    <p class="text-slate-500 text-xs font-bold uppercase mt-1">Senior Manager, RCI Asia Pacific</p>
+                    <a href="tel:+639453514722" class="block mt-4 text-sm font-bold text-slate-400 hover:text-blue-600 transition"><i class="fa-solid fa-phone mr-2"></i>0945 351 4722</a>
                 </div>
-
-                <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
-                    <p class="text-blue-600 font-bold text-lg mb-1">Joel Angelo De Castro</p>
-                    <p class="text-slate-700 text-sm font-semibold mb-3">Operations Manager, Sitel PH</p>
-                    <a href="tel:+639064367797" class="text-sm text-slate-500 hover:text-blue-600 transition"><i class="fa-solid fa-phone mr-1"></i> 0945 842 8862</a>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition">
+                    <p class="text-blue-700 font-extrabold text-lg">Joel Angelo De Castro</p>
+                    <p class="text-slate-500 text-xs font-bold uppercase mt-1">Operations Manager, Sitel PH</p>
+                    <a href="tel:+639064367797" class="block mt-4 text-sm font-bold text-slate-400 hover:text-blue-600 transition"><i class="fa-solid fa-phone mr-2"></i>0906 436 7797</a>
                 </div>
-
-                <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
-                    <p class="text-blue-600 font-bold text-lg mb-1">Sharon Landingin</p>
-                    <p class="text-slate-700 text-sm font-semibold mb-3">Senior Lead Opertions, Togetherlight</p>
-                    <a href="tel:+639270893343" class="text-sm text-slate-500 hover:text-blue-600 transition"><i class="fa-solid fa-phone mr-1"></i> 0917 124 9788</a>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition">
+                    <p class="text-blue-700 font-extrabold text-lg text-sm">Sharon Landingin</p>
+                    <p class="text-slate-500 text-xs font-bold uppercase mt-1">Senior Lead Operations, Togetherlight</p>
+                    <a href="tel:+639270893343" class="block mt-4 text-sm font-bold text-slate-400 hover:text-blue-600 transition"><i class="fa-solid fa-phone mr-2"></i>0927 089 3343</a>
                 </div>
-
-                <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
-                    <p class="text-blue-600 font-bold text-lg mb-1">Emmalyn Reyes</p>
-                    <p class="text-slate-700 text-sm font-semibold mb-3">Account Manager, Demand Science</p>
-                    <a href="tel:+639088163369" class="text-sm text-slate-500 hover:text-blue-600 transition"><i class="fa-solid fa-phone mr-1"></i> 0998 950 5562</a>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition">
+                    <p class="text-blue-700 font-extrabold text-lg">Emmalyn Reyes</p>
+                    <p class="text-slate-500 text-xs font-bold uppercase mt-1">Account Manager, Demand Science</p>
+                    <a href="tel:+639088163369" class="block mt-4 text-sm font-bold text-slate-400 hover:text-blue-600 transition"><i class="fa-solid fa-phone mr-2"></i>0908 816 3369</a>
                 </div>
-
-                <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
-                    <p class="text-blue-600 font-bold text-lg mb-1">Joy Delos Reyes</p>
-                    <p class="text-slate-700 text-sm font-semibold mb-3">QA Lead</p>
-                    <a href="tel:+639487725731" class="text-sm text-slate-500 hover:text-blue-600 transition"><i class="fa-solid fa-phone mr-1"></i> 0948 772 5731</a>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition">
+                    <p class="text-blue-700 font-extrabold text-lg">Joy Delos Reyes</p>
+                    <p class="text-slate-500 text-xs font-bold uppercase mt-1">QA Lead</p>
+                    <a href="tel:+639487725731" class="block mt-4 text-sm font-bold text-slate-400 hover:text-blue-600 transition"><i class="fa-solid fa-phone mr-2"></i>0948 772 5731</a>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <footer class="bg-slate-900 py-20 px-6 text-center text-white">
-        <h3 class="text-3xl font-bold mb-4">Let's Connect</h3>
-        <div class="flex flex-col md:flex-row justify-center gap-4">
-            <a href="mailto:epayang21@gmail.com" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-full transition shadow-lg">
-                <i class="fa-solid fa-envelope mr-2"></i> Email Me
-            </a>
-            <a href="tel:+639399126435" class="bg-transparent border-2 border-slate-700 hover:border-slate-500 text-white font-bold py-4 px-10 rounded-full transition">
-                <i class="fa-solid fa-phone mr-2"></i> Call Now
-            </a>
+    <footer class="bg-slate-950 py-20 px-6 text-center text-white">
+        <h3 class="text-3xl font-bold mb-8 uppercase tracking-tighter">Let's Connect</h3>
+        <div class="flex flex-col md:flex-row justify-center gap-6">
+            <a href="mailto:epayang21@gmail.com" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-full transition shadow-2xl uppercase text-sm">Email Me</a>
+            <a href="tel:+639399126435" class="bg-transparent border-2 border-slate-700 hover:border-white text-white font-bold py-4 px-10 rounded-full transition uppercase text-sm">Call Now</a>
         </div>
-        <p class="mt-12 text-slate-600 text-sm">© 2024 Eduardo Payang | Tarlac City, PH</p>
+        <p class="mt-16 text-slate-600 text-[10px] font-black uppercase tracking-[0.5em]">© 2024 Eduardo Payang • Tarlac City, PH</p>
     </footer>
 
 </body>
