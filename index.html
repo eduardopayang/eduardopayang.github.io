@@ -11,20 +11,21 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
         body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
         .glass { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(12px); }
-        .hero-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e40af 100%); }
+        .hero-gradient { background: linear-gradient(135deg, #020617 0%, #1e3a8a 100%); }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900">
 
     <nav class="fixed top-0 w-full z-50 glass border-b border-slate-200">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <span class="font-black tracking-tighter text-blue-700 text-xl">EP.</span>
-            <div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest text-slate-500">
+            <span class="font-black tracking-tighter text-blue-700 text-xl uppercase">EP.</span>
+            <div class="hidden md:flex space-x-8 text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500">
+                <a href="#about" class="hover:text-blue-600 transition">About</a>
                 <a href="#journey" class="hover:text-blue-600 transition">Journey</a>
                 <a href="#awards" class="hover:text-blue-600 transition">Awards</a>
                 <a href="#references" class="hover:text-blue-600 transition">References</a>
             </div>
-            <a href="mailto:epayang21@gmail.com" class="bg-blue-600 text-white px-5 py-2 rounded-full text-xs font-bold uppercase hover:bg-blue-700 shadow-lg transition">Contact</a>
+            <a href="mailto:epayang21@gmail.com" class="bg-blue-600 text-white px-5 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest hover:bg-blue-700 shadow-lg transition">Contact</a>
         </div>
     </nav>
 
@@ -38,7 +39,7 @@
             <div class="relative group">
                 <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-[2rem] blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
                 <div class="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-[2rem] overflow-hidden border border-white/10 bg-slate-900 shadow-2xl">
-                    <img src="Edd2.png" alt="Eduardo Payang" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <img src="Edd2.png" alt="Eduardo Payang" class="w-full h-full object-cover transition duration-700 group-hover:scale-105">
                 </div>
                 <div class="absolute -bottom-2 -right-2 bg-slate-900 p-2 rounded-2xl border border-white/10 shadow-xl">
                     <div class="flex items-center gap-2 px-3 py-1">
@@ -64,12 +65,12 @@
 
                 <div class="flex flex-wrap justify-center md:justify-start gap-3 mb-8">
                     <span class="bg-white/5 backdrop-blur-md border border-white/10 px-4 py-2 rounded-xl text-xs font-bold text-blue-100 tracking-wide">
-                        <i class="fa-solid fa-microchip mr-2 text-blue-400"></i> Senior Tech Specialist
+                        <i class="fa-solid fa-microchip mr-2 text-blue-400"></i> Tech Specialist
                     </span>
                     <span class="bg-white/5 backdrop-blur-md border border-white/10 px-4 py-2 rounded-xl text-xs font-bold text-blue-100 tracking-wide">
                         <i class="fa-solid fa-users-gear mr-2 text-blue-400"></i> Operations Manager
                     </span>
-                    <span class="bg-white/5 backdrop-blur-md border border-white/10 px-4 py-2 rounded-xl text-xs font-bold text-blue-100 tracking-wide font-mono italic">
+                    <span class="bg-white/5 backdrop-blur-md border border-white/10 px-4 py-2 rounded-xl text-xs font-bold text-blue-100 tracking-wide">
                         16+ Years Experience
                     </span>
                 </div>
@@ -78,11 +79,65 @@
                     <p class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-blue-500"></i> Tarlac City, PH</p>
                     <span class="hidden md:inline opacity-20">|</span>
                     <p class="flex items-center gap-2"><i class="fa-solid fa-laptop-house text-blue-500"></i> Remote & Hybrid Expert</p>
-            </p>
+                </div>
+            </div>
         </div>
     </header>
 
-    <section id="journey" class="py-24 px-6">
+    <section id="about" class="py-24 px-6 bg-white relative">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col lg:flex-row gap-16 items-start">
+                <div class="lg:w-1/2">
+                    <h3 class="text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-6 italic">Professional Summary</h3>
+                    <p class="text-xl text-slate-800 leading-relaxed font-semibold mb-6">
+                        Versatile Senior Technical Support Specialist and Operations Leader with over <span class="text-blue-600 underline decoration-2 underline-offset-8">16 years</span> of experience.
+                    </p>
+                    <div class="space-y-4 text-slate-600 leading-relaxed text-sm md:text-base">
+                        <p>
+                            Expert in Tier 2/3 technical troubleshooting, root cause analysis, and multi-channel team management. A <strong>Certified Leadership Academy graduate</strong> with a proven track record of scaling operational efficiency for global brands.
+                        </p>
+                        <p class="p-6 bg-slate-50 border-l-4 border-blue-500 rounded-r-2xl italic shadow-sm">
+                            "Currently leveraging strong organizational and managerial skills in residential property management while seeking a new high-impact leadership or technical role."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="p-6 rounded-2xl bg-[#020617] text-white shadow-xl hover:-translate-y-1 transition duration-300">
+                        <i class="fa-solid fa-microchip text-blue-400 text-2xl mb-4"></i>
+                        <h4 class="font-bold text-lg mb-2">Technical Mastery</h4>
+                        <p class="text-slate-400 text-[10px] leading-relaxed tracking-wide uppercase">Tier 2/3, Root Cause, Zoho Enterprise</p>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-blue-600 text-white shadow-xl hover:-translate-y-1 transition duration-300">
+                        <i class="fa-solid fa-graduation-cap text-blue-100 text-2xl mb-4"></i>
+                        <h4 class="font-bold text-lg mb-2">Ops Leadership</h4>
+                        <p class="text-blue-100 text-[10px] leading-relaxed tracking-wide uppercase">Leadership Academy Graduate</p>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-slate-100 border border-slate-200 hover:-translate-y-1 transition duration-300">
+                        <i class="fa-solid fa-building-user text-slate-800 text-2xl mb-4"></i>
+                        <h4 class="font-bold text-slate-900 mb-2">Property Mgmt</h4>
+                        <p class="text-slate-500 text-[10px] leading-relaxed tracking-wide uppercase">Asset Logistics & Organization</p>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-slate-100 border border-slate-200 hover:-translate-y-1 transition duration-300">
+                        <i class="fa-solid fa-globe text-slate-800 text-2xl mb-4"></i>
+                        <h4 class="font-bold text-slate-900 mb-2">16+ Years</h4>
+                        <p class="text-slate-500 text-[10px] leading-relaxed tracking-wide uppercase">BPO & Remote Excellence</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-slate-950 py-16 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div><p class="text-4xl font-black text-white">16+</p><p class="text-blue-400 text-[10px] font-bold uppercase tracking-[0.2em] mt-2">Years Exp</p></div>
+            <div><p class="text-4xl font-black text-white">20+</p><p class="text-blue-400 text-[10px] font-bold uppercase tracking-[0.2em] mt-2">Agents Managed</p></div>
+            <div><p class="text-4xl font-black text-white">100%</p><p class="text-blue-400 text-[10px] font-bold uppercase tracking-[0.2em] mt-2">SLA Compliance</p></div>
+            <div><p class="text-4xl font-black text-white">T3</p><p class="text-blue-400 text-[10px] font-bold uppercase tracking-[0.2em] mt-2">Support Level</p></div>
+        </div>
+    </div>
+
+    <section id="journey" class="py-24 px-6 bg-slate-50">
         <div class="max-w-4xl mx-auto">
             <h3 class="text-center text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-16 italic">Professional Journey</h3>
             <div class="space-y-12">
@@ -90,13 +145,13 @@
                     <div class="absolute -left-[9px] top-0 w-4 h-4 bg-blue-600 rounded-full border-4 border-white group-hover:scale-150 transition"></div>
                     <span class="text-xs font-bold text-blue-600 uppercase">2018 — 2024</span>
                     <h4 class="text-xl font-bold text-slate-900 mt-1">Senior Technical Support Specialist</h4>
-                    <p class="text-slate-600 mt-3 text-sm leading-relaxed">Expert in Zoho CRM implementation, Tier 2/3 troubleshooting, and optimizing cross-functional team workflows for global operations.</p>
+                    <p class="text-slate-600 mt-3 text-sm leading-relaxed font-medium">Expert in Zoho CRM implementation, Tier 2/3 troubleshooting, and optimizing cross-functional team workflows for global operations.</p>
                 </div>
                 <div class="relative pl-8 border-l-2 border-slate-200 group">
                     <div class="absolute -left-[9px] top-0 w-4 h-4 bg-slate-300 rounded-full border-4 border-white group-hover:scale-150 transition"></div>
                     <span class="text-xs font-bold text-slate-400 uppercase">2012 — 2018</span>
                     <h4 class="text-xl font-bold text-slate-900 mt-1">Operations Team Manager</h4>
-                    <p class="text-slate-600 mt-3 text-sm leading-relaxed">Led 20+ agents with a heavy focus on KPI attainment, performance coaching, and strict SLA compliance in high-pressure BPO settings.</p>
+                    <p class="text-slate-600 mt-3 text-sm leading-relaxed font-medium">Led 20+ agents with a heavy focus on KPI attainment, performance coaching, and strict SLA compliance in high-pressure BPO settings.</p>
                 </div>
             </div>
         </div>
@@ -107,13 +162,13 @@
             <h3 class="text-sm font-black text-blue-400 uppercase tracking-[0.3em] mb-16">Recognition of Excellence</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div class="group bg-white/5 p-6 rounded-3xl border border-white/10 hover:bg-white/10 transition">
-                    <img src="Sutherland.jpg" alt="Award 1" class="rounded-xl w-full h-auto max-h-72 object-contain mb-6 mx-auto shadow-2xl">
-                    <p class="font-bold text-lg mb-1">Five Core Values Award</p>
+                    <img src="Sutherland.jpg" alt="Award 1" class="rounded-xl w-full h-auto max-h-72 object-contain mb-6 mx-auto shadow-2xl transition duration-500 group-hover:scale-105">
+                    <p class="font-bold text-lg mb-1 uppercase tracking-tight">Five Core Values Award</p>
                     <p class="text-xs text-blue-400 font-bold uppercase">Sutherland Global Services</p>
                 </div>
                 <div class="group bg-white/5 p-6 rounded-3xl border border-white/10 hover:bg-white/10 transition">
-                    <img src="Sutherland2.png" alt="Award 2" class="rounded-xl w-full h-auto max-h-72 object-contain mb-6 mx-auto shadow-2xl">
-                    <p class="font-bold text-lg mb-1 text-sm md:text-base">Platinum Values Award</p>
+                    <img src="Sutherland2.png" alt="Award 2" class="rounded-xl w-full h-auto max-h-72 object-contain mb-6 mx-auto shadow-2xl transition duration-500 group-hover:scale-105">
+                    <p class="font-bold text-lg mb-1 uppercase tracking-tight text-sm md:text-base">Platinum Values Award</p>
                     <p class="text-xs text-blue-400 font-bold uppercase">Sutherland Global Services</p>
                 </div>
             </div>
@@ -122,44 +177,57 @@
 
     <section id="references" class="py-24 px-6 bg-white">
         <div class="max-w-6xl mx-auto">
-            <h3 class="text-center text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-16">Character References</h3>
+            <h3 class="text-center text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-16 italic text-center">Character References</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition">
-                    <p class="text-blue-700 font-extrabold text-lg">Ma. Vanessa M. David</p>
-                    <p class="text-slate-500 text-xs font-bold uppercase mt-1">Senior Manager, RCI Asia Pacific</p>
-                    <a href="tel:+639453514722" class="block mt-4 text-sm font-bold text-slate-400 hover:text-blue-600 transition"><i class="fa-solid fa-phone mr-2"></i>0945 351 4722</a>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition group">
+                    <p class="text-blue-700 font-extrabold text-lg tracking-tight group-hover:text-blue-600">Ma. Vanessa M. David</p>
+                    <p class="text-slate-500 text-[10px] font-black uppercase mt-1">Senior Manager, RCI Asia Pacific</p>
+                    <a href="tel:+639453514722" class="block mt-4 text-xs font-black text-slate-400 hover:text-blue-600 transition tracking-widest"><i class="fa-solid fa-phone mr-2"></i>0945 351 4722</a>
                 </div>
-                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition">
-                    <p class="text-blue-700 font-extrabold text-lg">Joel Angelo De Castro</p>
-                    <p class="text-slate-500 text-xs font-bold uppercase mt-1">Operations Manager, Sitel PH</p>
-                    <a href="tel:+639064367797" class="block mt-4 text-sm font-bold text-slate-400 hover:text-blue-600 transition"><i class="fa-solid fa-phone mr-2"></i>0906 436 7797</a>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition group">
+                    <p class="text-blue-700 font-extrabold text-lg tracking-tight group-hover:text-blue-600">Joel Angelo De Castro</p>
+                    <p class="text-slate-500 text-[10px] font-black uppercase mt-1">Operations Manager, SITEL PH</p>
+                    <a href="tel:+639064367797" class="block mt-4 text-xs font-black text-slate-400 hover:text-blue-600 transition tracking-widest"><i class="fa-solid fa-phone mr-2"></i>0906 436 7797</a>
                 </div>
-                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition">
-                    <p class="text-blue-700 font-extrabold text-lg text-sm">Sharon Landingin</p>
-                    <p class="text-slate-500 text-xs font-bold uppercase mt-1">Senior Lead Operations, Togetherlight</p>
-                    <a href="tel:+639270893343" class="block mt-4 text-sm font-bold text-slate-400 hover:text-blue-600 transition"><i class="fa-solid fa-phone mr-2"></i>0927 089 3343</a>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition group">
+                    <p class="text-blue-700 font-extrabold text-lg tracking-tight group-hover:text-blue-600 text-sm">Sharon Landingin</p>
+                    <p class="text-slate-500 text-[10px] font-black uppercase mt-1">Senior Lead Ops, Togetherlight</p>
+                    <a href="tel:+639270893343" class="block mt-4 text-xs font-black text-slate-400 hover:text-blue-600 transition tracking-widest"><i class="fa-solid fa-phone mr-2"></i>0927 089 3343</a>
                 </div>
-                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition">
-                    <p class="text-blue-700 font-extrabold text-lg">Emmalyn Reyes</p>
-                    <p class="text-slate-500 text-xs font-bold uppercase mt-1">Account Manager, Demand Science</p>
-                    <a href="tel:+639088163369" class="block mt-4 text-sm font-bold text-slate-400 hover:text-blue-600 transition"><i class="fa-solid fa-phone mr-2"></i>0908 816 3369</a>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition group">
+                    <p class="text-blue-700 font-extrabold text-lg tracking-tight group-hover:text-blue-600">Emmalyn Reyes</p>
+                    <p class="text-slate-500 text-[10px] font-black uppercase mt-1">Account Manager, Demand Science</p>
+                    <a href="tel:+639088163369" class="block mt-4 text-xs font-black text-slate-400 hover:text-blue-600 transition tracking-widest"><i class="fa-solid fa-phone mr-2"></i>0908 816 3369</a>
                 </div>
-                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition">
-                    <p class="text-blue-700 font-extrabold text-lg">Joy Delos Reyes</p>
-                    <p class="text-slate-500 text-xs font-bold uppercase mt-1">QA Lead</p>
-                    <a href="tel:+639487725731" class="block mt-4 text-sm font-bold text-slate-400 hover:text-blue-600 transition"><i class="fa-solid fa-phone mr-2"></i>0948 772 5731</a>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition group">
+                    <p class="text-blue-700 font-extrabold text-lg tracking-tight group-hover:text-blue-600">Joy Delos Reyes</p>
+                    <p class="text-slate-500 text-[10px] font-black uppercase mt-1">QA Lead</p>
+                    <a href="tel:+639487725731" class="block mt-4 text-xs font-black text-slate-400 hover:text-blue-600 transition tracking-widest"><i class="fa-solid fa-phone mr-2"></i>0948 772 5731</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-slate-950 py-20 px-6 text-center text-white">
-        <h3 class="text-3xl font-bold mb-8 uppercase tracking-tighter">Let's Connect</h3>
-        <div class="flex flex-col md:flex-row justify-center gap-6">
-            <a href="mailto:epayang21@gmail.com" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-full transition shadow-2xl uppercase text-sm">Email Me</a>
-            <a href="tel:+639399126435" class="bg-transparent border-2 border-slate-700 hover:border-white text-white font-bold py-4 px-10 rounded-full transition uppercase text-sm">Call Now</a>
+    <footer class="bg-[#020617] py-24 px-6 text-center text-white relative overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-1/2 bg-blue-600/10 blur-[100px]"></div>
+        <div class="relative z-10">
+            <h3 class="text-4xl md:text-5xl font-black mb-8 uppercase tracking-tighter leading-none">Ready to optimize <br> <span class="text-blue-500">your operations?</span></h3>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6 mb-16">
+                <a href="mailto:epayang21@gmail.com" class="px-10 py-4 bg-blue-600 rounded-full font-bold transition hover:bg-blue-700 flex items-center gap-2 text-xs uppercase tracking-widest">
+                    <i class="fa-solid fa-envelope"></i> Message Me
+                </a>
+                <a href="tel:+639399126435" class="px-10 py-4 rounded-full border border-white/10 font-bold hover:bg-white/5 transition flex items-center gap-2 text-xs uppercase tracking-widest">
+                    <i class="fa-solid fa-phone text-blue-500"></i> Call Direct
+                </a>
+            </div>
+            <div class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 max-w-6xl mx-auto">
+                <p class="text-slate-500 text-[10px] font-black uppercase tracking-[0.5em]">© 2024 Eduardo Payang • Tarlac City, PH</p>
+                <div class="flex gap-6 text-slate-500">
+                    <a href="#" class="hover:text-blue-500 transition"><i class="fa-brands fa-linkedin-in text-lg"></i></a>
+                    <a href="mailto:epayang21@gmail.com" class="hover:text-blue-500 transition"><i class="fa-solid fa-envelope text-lg"></i></a>
+                </div>
+            </div>
         </div>
-        <p class="mt-16 text-slate-600 text-[10px] font-black uppercase tracking-[0.5em]">© 2024 Eduardo Payang • Tarlac City, PH</p>
     </footer>
 
 </body>
