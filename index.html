@@ -11,7 +11,12 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
         body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
         .glass { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(12px); }
-        .hero-gradient { background: linear-gradient(135deg, #020617 0%, #1e3a8a 100%); }
+        .img-optimize {
+            backface-visibility: hidden;
+            transform: translateZ(0);
+            -webkit-font-smoothing: subpixel-antialiased;
+            image-rendering: -webkit-optimize-contrast;
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900">
@@ -29,122 +34,73 @@
         </div>
     </nav>
 
-    <header class="relative min-h-[90vh] flex items-center pt-32 pb-20 px-6 overflow-hidden bg-[#020617]">
+    <header class="relative min-h-screen flex items-center pt-20 px-6 overflow-hidden bg-[#020617]">
         
-        <div class="absolute top-0 right-0 w-full lg:w-1/2 h-full z-0 opacity-30 lg:opacity-50">
+        <div class="absolute top-0 right-0 w-full lg:w-1/2 h-full z-0 pointer-events-none">
             <img src="Edd(1).jpg" alt="Background Profile" 
-                class="w-full h-full object-cover object-top filter grayscale"
+                class="img-optimize w-full h-full object-cover object-top opacity-30 lg:opacity-50 grayscale contrast-125"
                 style="mix-blend-mode: luminosity;">
             
-            <div class="absolute inset-0 bg-gradient-to-r from-[#020617] via-[#020617]/60 to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-[#020617] via-[#020617]/40 to-transparent"></div>
             <div class="absolute inset-0 bg-gradient-to-t from-[#020617] via-transparent to-[#020617]"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-[#020617] via-transparent to-transparent"></div>
         </div>
 
         <div class="relative z-10 max-w-6xl mx-auto w-full">
-            <div class="max-w-3xl">
-                <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 mb-10">
-                    <span class="relative flex h-2 w-2">
-                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-                    </span>
-                    <span class="text-blue-400 text-[10px] font-black uppercase tracking-[0.3em]">Senior Operations & Tech Specialist</span>
+            <div class="lg:w-2/3">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 mb-8">
+                    <span class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
+                    <span class="text-blue-400 text-[10px] font-bold uppercase tracking-[0.3em]">Senior Operations Leader</span>
                 </div>
                 
-                <h1 class="text-6xl md:text-[100px] font-black mb-6 tracking-tighter text-white leading-[0.85]">
+                <h1 class="text-5xl md:text-8xl font-black mb-6 tracking-tighter text-white leading-none">
                     EDUARDO <br> 
                     <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-300">PAYANG</span>
                 </h1>
 
-                <p class="text-xl md:text-2xl text-slate-400 font-medium mb-12 max-w-xl leading-relaxed">
-                    16 years of driving excellence from <span class="text-white">CSR roots</span> to <span class="text-white">Tier 3 Mastery</span>. 
-                    Specializing in global BPO operations and technical infrastructure.
+                <p class="text-lg md:text-2xl text-slate-400 font-medium mb-10 max-w-lg leading-relaxed">
+                    16 years of scaling excellence—from <span class="text-white">CSR foundations</span> to <span class="text-white">Tier 3 Technical Mastery</span>.
                 </p>
 
-                <div class="flex flex-wrap gap-6">
-                    <a href="#about" class="px-10 py-4 bg-blue-600 text-white rounded-full font-bold text-[10px] uppercase tracking-widest hover:bg-blue-700 transition shadow-2xl">
+                <div class="flex flex-wrap gap-4">
+                    <a href="#about" class="px-8 py-4 bg-blue-600 text-white rounded-full font-bold text-[10px] uppercase tracking-widest hover:shadow-[0_0_20px_rgba(37,99,235,0.4)] transition duration-300">
                         Explore Expertise
                     </a>
-                    <div class="flex items-center gap-4 text-slate-500 text-[10px] font-black uppercase tracking-widest ml-2">
-                        <span class="w-12 h-[1px] bg-slate-800"></span>
-                        Scroll to Begin
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center md:text-left flex-grow">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 mb-6">
-                    <span class="w-2 h-2 rounded-full bg-blue-500"></span>
-                    <span class="text-blue-400 text-[10px] font-bold uppercase tracking-[0.2em]">Senior Leadership Portfolio</span>
-                </div>
-                
-                <h1 class="text-5xl md:text-7xl lg:text-8xl font-black mb-6 tracking-tighter text-white leading-none">
-                    EDUARDO <br class="hidden lg:block"> 
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-300">PAYANG</span>
-                </h1>
-
-                <div class="flex flex-wrap justify-center md:justify-start gap-3 mb-8">
-                    <span class="bg-white/5 backdrop-blur-md border border-white/10 px-4 py-2 rounded-xl text-xs font-bold text-blue-100 tracking-wide">
-                        <i class="fa-solid fa-microchip mr-2 text-blue-400"></i> Tech Specialist
-                    </span>
-                    <span class="bg-white/5 backdrop-blur-md border border-white/10 px-4 py-2 rounded-xl text-xs font-bold text-blue-100 tracking-wide">
-                        <i class="fa-solid fa-users-gear mr-2 text-blue-400"></i> Operations Manager
-                    </span>
-                    <span class="bg-white/5 backdrop-blur-md border border-white/10 px-4 py-2 rounded-xl text-xs font-bold text-blue-100 tracking-wide">
-                        16+ Years Experience
-                    </span>
-                </div>
-
-                <div class="flex flex-wrap justify-center md:justify-start gap-4 text-slate-400 text-sm font-medium">
-                    <p class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-blue-500"></i> Tarlac City, PH</p>
-                    <span class="hidden md:inline opacity-20">|</span>
-                    <p class="flex items-center gap-2"><i class="fa-solid fa-laptop-house text-blue-500"></i> Remote & Hybrid Expert</p>
+                    <a href="mailto:epayang21@gmail.com" class="px-8 py-4 bg-white/5 border border-white/10 text-white rounded-full font-bold text-[10px] uppercase tracking-widest hover:bg-white/10 transition">
+                        Get In Touch
+                    </a>
                 </div>
             </div>
         </div>
     </header>
 
-    <section id="about" class="py-24 px-6 bg-white relative">
+    <section id="about" class="py-24 px-6 bg-white border-t border-slate-100">
         <div class="max-w-6xl mx-auto">
-            <div class="flex flex-col lg:flex-row gap-16 items-start">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
                 
-                <div class="lg:w-1/2">
-                    <h3 class="text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-6 italic">Professional Summary</h3>
-                    <p class="text-xl text-slate-800 leading-relaxed font-semibold mb-6">
-                        Versatile <span class="text-blue-600">Technical Support Specialist</span> and Operations Leader with over 16 years of hands-on excellence.
-                    </p>
-                    <div class="space-y-4 text-slate-600 leading-relaxed text-sm md:text-base">
-                        <p>
-                            My journey began as a <strong>Customer Service Representative (CSR)</strong>, where I mastered the art of high-volume client interaction and service excellence. This foundation allowed me to evolve into a Tier 2/3 Specialist and a Certified Leadership Academy graduate.
-                        </p>
-                        <p>
-                            I offer a rare blend of "on-the-floor" experience and high-level operational strategy. Whether resolving complex root-cause technical issues or scaling team efficiency, I remain committed to the core principles of the CSR role: <strong>speed, accuracy, and customer satisfaction.</strong>
-                        </p>
-                        <p class="p-6 bg-slate-50 border-l-4 border-blue-500 rounded-r-2xl italic shadow-sm">
-                            "Currently leveraging strong organizational skills in residential property management while seeking a new high-impact role where I can apply my technical mastery."
-                        </p>
+                <div class="md:col-span-4">
+                    <div class="sticky top-32">
+                        <span class="text-blue-600 font-black text-8xl tracking-tighter">16+</span>
+                        <h3 class="text-slate-900 font-black text-xl uppercase tracking-widest mt-2 leading-tight">Years <br> Experience</h3>
                     </div>
                 </div>
 
-                <div class="lg:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div class="p-6 rounded-2xl bg-[#020617] text-white shadow-xl hover:-translate-y-1 transition duration-300">
-                        <i class="fa-solid fa-headset text-blue-400 text-2xl mb-4"></i>
-                        <h4 class="font-bold text-lg mb-2">CSR Foundation</h4>
-                        <p class="text-slate-400 text-[10px] leading-relaxed tracking-wide uppercase">Multi-channel Support & Client Care</p>
-                    </div>
-                    <div class="p-6 rounded-2xl bg-blue-600 text-white shadow-xl hover:-translate-y-1 transition duration-300">
-                        <i class="fa-solid fa-microchip text-blue-100 text-2xl mb-4"></i>
-                        <h4 class="font-bold text-lg mb-2">Technical SME</h4>
-                        <p class="text-blue-100 text-[10px] leading-relaxed tracking-wide uppercase">Tier 3 Root Cause & Zoho Expert</p>
-                    </div>
-                    <div class="p-6 rounded-2xl bg-slate-100 border border-slate-200 hover:-translate-y-1 transition duration-300">
-                        <i class="fa-solid fa-graduation-cap text-slate-800 text-2xl mb-4"></i>
-                        <h4 class="font-bold text-slate-900 mb-2">Certified Lead</h4>
-                        <p class="text-slate-500 text-[10px] leading-relaxed tracking-wide uppercase">Leadership Academy Graduate</p>
-                    </div>
-                    <div class="p-6 rounded-2xl bg-slate-100 border border-slate-200 hover:-translate-y-1 transition duration-300">
-                        <i class="fa-solid fa-building-user text-slate-800 text-2xl mb-4"></i>
-                        <h4 class="font-bold text-slate-900 mb-2">Property Mgmt</h4>
-                        <p class="text-slate-500 text-[10px] leading-relaxed tracking-wide uppercase">Asset Logistics & Trust</p>
+                <div class="md:col-span-8 space-y-8">
+                    <h4 class="text-sm font-black text-slate-400 uppercase tracking-[0.4em] italic">The Professional Story</h4>
+                    <p class="text-2xl md:text-3xl text-slate-800 font-bold leading-tight">
+                        A versatile leader driving excellence in BPO and remote enterprise environments.
+                    </p>
+                    <div class="text-slate-600 text-lg leading-relaxed space-y-6">
+                        <p>
+                            Expert in Tier 2/3 technical troubleshooting, root cause analysis, and multi-channel team management. A <strong>Certified Leadership Academy graduate</strong> with a proven track record of scaling operational efficiency for global brands. 
+                        </p>
+                        <p>
+                            My background is built on a strong CSR foundation, ensuring that every technical solution or managerial strategy remains focused on the customer experience.
+                        </p>
+                        
+                        <div class="p-8 bg-slate-50 border-l-4 border-blue-600 rounded-r-2xl italic shadow-sm">
+                            "Currently leveraging strong organizational and managerial skills in residential property management while seeking a new high-impact leadership or technical role."
+                        </p>
                     </div>
                 </div>
             </div>
@@ -168,13 +124,13 @@
                     <div class="absolute -left-[9px] top-0 w-4 h-4 bg-blue-600 rounded-full border-4 border-white group-hover:scale-150 transition"></div>
                     <span class="text-xs font-bold text-blue-600 uppercase">2018 — 2024</span>
                     <h4 class="text-xl font-bold text-slate-900 mt-1">Senior Technical Support Specialist</h4>
-                    <p class="text-slate-600 mt-3 text-sm leading-relaxed font-medium">Expert in Zoho CRM implementation, Tier 2/3 troubleshooting, and optimizing cross-functional team workflows for global operations.</p>
+                    <p class="text-slate-600 mt-3 text-sm leading-relaxed">Expert in Zoho CRM implementation, Tier 2/3 troubleshooting, and optimizing cross-functional team workflows.</p>
                 </div>
                 <div class="relative pl-8 border-l-2 border-slate-200 group">
                     <div class="absolute -left-[9px] top-0 w-4 h-4 bg-slate-300 rounded-full border-4 border-white group-hover:scale-150 transition"></div>
                     <span class="text-xs font-bold text-slate-400 uppercase">2012 — 2018</span>
                     <h4 class="text-xl font-bold text-slate-900 mt-1">Operations Team Manager</h4>
-                    <p class="text-slate-600 mt-3 text-sm leading-relaxed font-medium">Led 20+ agents with a heavy focus on KPI attainment, performance coaching, and strict SLA compliance in high-pressure BPO settings.</p>
+                    <p class="text-slate-600 mt-3 text-sm leading-relaxed">Led 20+ agents focusing on KPI attainment, coaching, and SLA compliance in high-pressure BPO settings.</p>
                 </div>
             </div>
         </div>
@@ -191,7 +147,7 @@
                 </div>
                 <div class="group bg-white/5 p-6 rounded-3xl border border-white/10 hover:bg-white/10 transition">
                     <img src="Sutherland2.png" alt="Award 2" class="rounded-xl w-full h-auto max-h-72 object-contain mb-6 mx-auto shadow-2xl transition duration-500 group-hover:scale-105">
-                    <p class="font-bold text-lg mb-1 uppercase tracking-tight text-sm md:text-base">Platinum Values Award</p>
+                    <p class="font-bold text-lg mb-1 uppercase tracking-tight">Platinum Values Award</p>
                     <p class="text-xs text-blue-400 font-bold uppercase">Sutherland Global Services</p>
                 </div>
             </div>
@@ -205,51 +161,44 @@
                 <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition group">
                     <p class="text-blue-700 font-extrabold text-lg tracking-tight group-hover:text-blue-600">Ma. Vanessa M. David</p>
                     <p class="text-slate-500 text-[10px] font-black uppercase mt-1">Senior Manager, RCI Asia Pacific</p>
-                    <a href="tel:+639453514722" class="block mt-4 text-xs font-black text-slate-400 hover:text-blue-600 transition tracking-widest"><i class="fa-solid fa-phone mr-2"></i>0945 351 4722</a>
+                    <a href="tel:+639453514722" class="block mt-4 text-xs font-black text-blue-600 transition tracking-widest"><i class="fa-solid fa-phone mr-2"></i>0945 351 4722</a>
                 </div>
                 <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition group">
                     <p class="text-blue-700 font-extrabold text-lg tracking-tight group-hover:text-blue-600">Joel Angelo De Castro</p>
                     <p class="text-slate-500 text-[10px] font-black uppercase mt-1">Operations Manager, SITEL PH</p>
-                    <a href="tel:+639064367797" class="block mt-4 text-xs font-black text-slate-400 hover:text-blue-600 transition tracking-widest"><i class="fa-solid fa-phone mr-2"></i>0906 436 7797</a>
+                    <a href="tel:+639064367797" class="block mt-4 text-xs font-black text-blue-600 transition tracking-widest"><i class="fa-solid fa-phone mr-2"></i>0906 436 7797</a>
                 </div>
                 <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition group">
-                    <p class="text-blue-700 font-extrabold text-lg tracking-tight group-hover:text-blue-600 text-sm">Sharon Landingin</p>
+                    <p class="text-blue-700 font-extrabold text-lg tracking-tight group-hover:text-blue-600">Sharon Landingin</p>
                     <p class="text-slate-500 text-[10px] font-black uppercase mt-1">Senior Lead Ops, Togetherlight</p>
-                    <a href="tel:+639270893343" class="block mt-4 text-xs font-black text-slate-400 hover:text-blue-600 transition tracking-widest"><i class="fa-solid fa-phone mr-2"></i>0927 089 3343</a>
+                    <a href="tel:+639270893343" class="block mt-4 text-xs font-black text-blue-600 transition tracking-widest"><i class="fa-solid fa-phone mr-2"></i>0927 089 3343</a>
                 </div>
                 <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition group">
                     <p class="text-blue-700 font-extrabold text-lg tracking-tight group-hover:text-blue-600">Emmalyn Reyes</p>
                     <p class="text-slate-500 text-[10px] font-black uppercase mt-1">Account Manager, Demand Science</p>
-                    <a href="tel:+639088163369" class="block mt-4 text-xs font-black text-slate-400 hover:text-blue-600 transition tracking-widest"><i class="fa-solid fa-phone mr-2"></i>0908 816 3369</a>
+                    <a href="tel:+639088163369" class="block mt-4 text-xs font-black text-blue-600 transition tracking-widest"><i class="fa-solid fa-phone mr-2"></i>0908 816 3369</a>
                 </div>
                 <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition group">
                     <p class="text-blue-700 font-extrabold text-lg tracking-tight group-hover:text-blue-600">Joy Delos Reyes</p>
-                    <p class="text-slate-500 text-[10px] font-black uppercase mt-1">QA Lead, Togetherlight</p>
-                    <a href="tel:+639487725731" class="block mt-4 text-xs font-black text-slate-400 hover:text-blue-600 transition tracking-widest"><i class="fa-solid fa-phone mr-2"></i>0948 772 5731</a>
+                    <p class="text-slate-500 text-[10px] font-black uppercase mt-1">QA Lead</p>
+                    <a href="tel:+639487725731" class="block mt-4 text-xs font-black text-blue-600 transition tracking-widest"><i class="fa-solid fa-phone mr-2"></i>0948 772 5731</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-[#020617] py-24 px-6 text-center text-white relative overflow-hidden">
-        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-1/2 bg-blue-600/10 blur-[100px]"></div>
+    <footer class="bg-[#020617] py-24 px-6 text-center text-white relative">
         <div class="relative z-10">
-            <h3 class="text-4xl md:text-5xl font-black mb-8 uppercase tracking-tighter leading-none">Ready to optimize <br> <span class="text-blue-500">your operations?</span></h3>
+            <h3 class="text-4xl md:text-5xl font-black mb-12 uppercase tracking-tighter">Ready to scale <br> <span class="text-blue-500">together?</span></h3>
             <div class="flex flex-col md:flex-row justify-center items-center gap-6 mb-16">
-                <a href="mailto:epayang21@gmail.com" class="px-10 py-4 bg-blue-600 rounded-full font-bold transition hover:bg-blue-700 flex items-center gap-2 text-xs uppercase tracking-widest">
-                    <i class="fa-solid fa-envelope"></i> Message Me
+                <a href="mailto:epayang21@gmail.com" class="px-10 py-4 bg-blue-600 rounded-full font-bold transition hover:bg-blue-700 text-xs uppercase tracking-widest">
+                    Message Me
                 </a>
-                <a href="tel:+639399126435" class="px-10 py-4 rounded-full border border-white/10 font-bold hover:bg-white/5 transition flex items-center gap-2 text-xs uppercase tracking-widest">
-                    <i class="fa-solid fa-phone text-blue-500"></i> Call Direct
+                <a href="tel:+639399126435" class="px-10 py-4 rounded-full border border-white/10 font-bold hover:bg-white/5 transition text-xs uppercase tracking-widest">
+                    Call Direct
                 </a>
             </div>
-            <div class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 max-w-6xl mx-auto">
-                <p class="text-slate-500 text-[10px] font-black uppercase tracking-[0.5em]">© 2024 Eduardo Payang • Tarlac City, PH</p>
-                <div class="flex gap-6 text-slate-500">
-                    <a href="#" class="hover:text-blue-500 transition"><i class="fa-brands fa-linkedin-in text-lg"></i></a>
-                    <a href="mailto:epayang21@gmail.com" class="hover:text-blue-500 transition"><i class="fa-solid fa-envelope text-lg"></i></a>
-                </div>
-            </div>
+            <p class="text-slate-500 text-[10px] font-black uppercase tracking-[0.5em]">© 2024 Eduardo Payang • Tarlac City, PH</p>
         </div>
     </footer>
 
